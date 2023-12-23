@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "js-test": "node --test",
-    "ts-test": "node --import tsx --watch --test $(find ./test -type f -regex \".*.test.*\" -printf \"%p \" | tr -d '\n')",
+    "ts-test": "node --import tsx --test $(find ./test -type f -regex \".*.test.*\" -printf \"%p \" | tr -d '\n')",
     "compile": "npx tsc --outDir ./dist"
   },
   "type": "module",
