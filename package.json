@@ -1,0 +1,20 @@
+{
+  "name": "tdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exemploFinanceiro.test.js",
+  "scripts": {
+    "js-test": "node --test",
+    "ts-test": "node --import tsx --test",
+    "compile": "npx tsc --outDir ./dist"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
