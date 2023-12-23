@@ -2,10 +2,9 @@
   "name": "tdd",
   "version": "1.0.0",
   "description": "",
-  "main": "exemploFinanceiro.test.js",
   "scripts": {
     "js-test": "node --test",
-    "ts-test": "node --import tsx --test",
+    "ts-test": "node --import tsx --watch --test $(find ./test -type f -regex \".*.test.*\" -printf \"%p \" | tr -d '\n')",
     "compile": "npx tsc --outDir ./dist"
   },
   "type": "module",
