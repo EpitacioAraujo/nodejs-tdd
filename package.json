@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "js-test": "node --test",
-    "ts-test": "tsx --test $(find . -type f -regex \".*.test.*\" -not -path \"./node_modules/*\" -printf \"%p \" | tr -d '\n')",
+    "test": "tsx --test $(find . -type f -regex \".*.test.*\" -not -path \"./node_modules/*\" -printf \"%p \" | tr -d '\n')",
     "compile": "npx tsc --outDir ./dist"
   },
   "type": "module",
